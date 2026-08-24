@@ -19,7 +19,7 @@ body {
 .hero {
   background: linear-gradient(135deg, #111111, #3a2a12);
   color: #ffffff;
-  padding: 65px 20px;
+  padding: 70px 20px 85px;
   text-align: center;
 }
 
@@ -53,7 +53,11 @@ body {
 }
 
 .section {
-  padding: 45px 0;
+  padding: 38px 0;
+}
+
+.section:first-of-type {
+  margin-top: -35px;
 }
 
 .section h2 {
@@ -70,10 +74,11 @@ body {
 
 .card {
   background: #ffffff;
-  padding: 25px;
+  padding: 28px;
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   border: 1px solid #eadfca;
+  min-height: 185px;
 }
 
 .card h3 {
@@ -122,7 +127,7 @@ footer {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 55px 18px;
+    padding: 55px 18px 65px;
   }
 
   .hero h1 {
@@ -137,12 +142,20 @@ footer {
     padding: 35px 0;
   }
 
+  .section:first-of-type {
+    margin-top: -20px;
+  }
+
   .section h2 {
     font-size: 26px;
   }
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
   }
 
   .highlight {
