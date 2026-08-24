@@ -116,6 +116,51 @@ body {
   font-size: 16px;
 }
 
+.offer {
+  text-align: center;
+  background: linear-gradient(135deg, #111111, #3a2a12);
+  color: #ffffff;
+  padding: 55px 30px;
+  border-radius: 26px;
+  margin: 25px auto 45px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
+}
+
+.offer h2 {
+  color: #d6a84f;
+  margin-bottom: 10px;
+}
+
+.offer h3 {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0 0 18px;
+}
+
+.offer p {
+  max-width: 720px;
+  margin: 0 auto 25px;
+  font-size: 18px;
+}
+
+.offer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px auto 30px;
+}
+
+.offer-list span {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(214, 168, 79, 0.45);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .highlight {
   background: #ffffff;
   padding: 40px;
@@ -188,6 +233,24 @@ footer {
 
   .card {
     min-height: auto;
+  }
+
+  .offer {
+    padding: 38px 20px;
+    margin: 20px auto 35px;
+  }
+
+  .offer h3 {
+    font-size: 24px;
+  }
+
+  .offer p {
+    font-size: 16px;
+  }
+
+  .offer-list {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .highlight {
