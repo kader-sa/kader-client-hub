@@ -36,6 +36,13 @@ body {
   margin: 0 auto 30px;
 }
 
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-block;
   background: #d6a84f;
@@ -51,6 +58,17 @@ body {
   background: #c99635;
   color: #111111;
   transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #d6a84f;
+}
+
+.secondary-btn:hover {
+  background: #d6a84f;
+  color: #111111;
 }
 
 .small-btn {
@@ -116,6 +134,7 @@ body {
   font-size: 16px;
 }
 
+/* عرض البداية */
 .offer {
   text-align: center;
   background: linear-gradient(135deg, #111111, #3a2a12);
@@ -169,6 +188,21 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
+.tiktok-note {
+  text-align: center;
+  margin-top: 28px;
+  background: #ffffff;
+  border: 1px solid #eadfca;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.tiktok-note p {
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
 .cta {
   text-align: center;
   background: #111111;
@@ -191,7 +225,25 @@ footer {
   background: #111111;
   color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 24px 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.footer-links a {
+  color: #d6a84f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
 }
 
 @media (max-width: 1000px) {
@@ -212,6 +264,16 @@ footer {
 
   .hero p {
     font-size: 17px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
   }
 
   .section {
@@ -259,5 +321,10 @@ footer {
 
   .cta {
     padding: 40px 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
   }
 }
