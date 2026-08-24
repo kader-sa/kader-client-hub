@@ -49,6 +49,7 @@ body {
 
 .btn:hover {
   background: #c99635;
+  color: #111111;
   transform: translateY(-2px);
 }
 
@@ -67,6 +68,7 @@ body {
 
 .small-btn:hover {
   background: #b88a32;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
