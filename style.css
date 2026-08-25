@@ -191,19 +191,35 @@ footer {
   padding: 24px 20px;
 }
 
+/* عبارة مساعد كادر فوق فقاعة Gabster */
 .kader-chat-hint {
   position: fixed;
-  right: 90px;
-  bottom: 28px;
+  right: 16px;
+  bottom: 18px;
   background: #111111;
   color: #ffffff;
-  padding: 10px 16px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: bold;
-  z-index: 9998;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
   border: 1px solid #d6a84f;
+  border-radius: 999px;
+  padding: 14px 72px 14px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 99999;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.kader-chat-hint::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #d6a84f;
+  border-radius: 50%;
+  margin-left: 8px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 1000px) {
@@ -270,9 +286,15 @@ footer {
   }
 
   .kader-chat-hint {
-    right: 80px;
-    bottom: 24px;
+    right: 12px;
+    bottom: 14px;
+    padding: 12px 60px 12px 14px;
     font-size: 12px;
-    padding: 8px 12px;
+  }
+
+  .kader-chat-hint::before {
+    width: 7px;
+    height: 7px;
+    margin-left: 6px;
   }
 }
