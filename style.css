@@ -36,13 +36,6 @@ body {
   margin: 0 auto 30px;
 }
 
-.hero-actions {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
 .btn {
   display: inline-block;
   background: #d6a84f;
@@ -58,17 +51,6 @@ body {
   background: #c99635;
   color: #111111;
   transform: translateY(-2px);
-}
-
-.secondary-btn {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #d6a84f;
-}
-
-.secondary-btn:hover {
-  background: #d6a84f;
-  color: #111111;
 }
 
 .small-btn {
@@ -134,7 +116,6 @@ body {
   font-size: 16px;
 }
 
-/* عرض البداية */
 .offer {
   text-align: center;
   background: linear-gradient(135deg, #111111, #3a2a12);
@@ -203,24 +184,6 @@ body {
   font-weight: bold;
 }
 
-.cta {
-  text-align: center;
-  background: #111111;
-  color: #ffffff;
-  padding: 55px 25px;
-  border-radius: 24px;
-  margin-bottom: 50px;
-}
-
-.cta h2 {
-  color: #d6a84f;
-}
-
-.cta p {
-  max-width: 650px;
-  margin: 0 auto 25px;
-}
-
 footer {
   background: #111111;
   color: #ffffff;
@@ -228,22 +191,19 @@ footer {
   padding: 24px 20px;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-
-.footer-links a {
-  color: #d6a84f;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-links a:hover {
+.kader-chat-hint {
+  position: fixed;
+  right: 90px;
+  bottom: 28px;
+  background: #111111;
   color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 9998;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  border: 1px solid #d6a84f;
 }
 
 @media (max-width: 1000px) {
@@ -264,16 +224,6 @@ footer {
 
   .hero p {
     font-size: 17px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 280px;
   }
 
   .section {
@@ -319,12 +269,10 @@ footer {
     padding: 28px 22px;
   }
 
-  .cta {
-    padding: 40px 20px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 8px;
+  .kader-chat-hint {
+    right: 80px;
+    bottom: 24px;
+    font-size: 12px;
+    padding: 8px 12px;
   }
 }
