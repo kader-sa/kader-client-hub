@@ -191,22 +191,22 @@ footer {
   padding: 24px 20px;
 }
 
-/* عبارة مساعد كادر فوق فقاعة Gabster */
+/* زر مساعد كادر يغطي فقاعة Gabster بشكل أنظف */
 .kader-chat-hint {
   position: fixed;
-  right: 4px;
-  bottom: 16px;
+  right: 0;
+  bottom: 14px;
   background: #111111;
   color: #ffffff;
   border: 1px solid #d6a84f;
   border-radius: 999px;
-  padding: 14px 86px 14px 18px;
+  padding: 14px 110px 14px 20px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
   z-index: 99999;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
   pointer-events: none;
   display: flex;
   align-items: center;
@@ -286,9 +286,9 @@ footer {
   }
 
   .kader-chat-hint {
-    right: 4px;
-    bottom: 14px;
-    padding: 12px 76px 12px 14px;
+    right: 0;
+    bottom: 12px;
+    padding: 12px 96px 12px 14px;
     font-size: 12px;
   }
 
