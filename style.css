@@ -194,13 +194,13 @@ footer {
 /* عبارة مساعد كادر فوق فقاعة Gabster */
 .kader-chat-hint {
   position: fixed;
-  right: 16px;
-  bottom: 18px;
+  right: 4px;
+  bottom: 16px;
   background: #111111;
   color: #ffffff;
   border: 1px solid #d6a84f;
   border-radius: 999px;
-  padding: 14px 72px 14px 18px;
+  padding: 14px 86px 14px 18px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -286,9 +286,9 @@ footer {
   }
 
   .kader-chat-hint {
-    right: 12px;
+    right: 4px;
     bottom: 14px;
-    padding: 12px 60px 12px 14px;
+    padding: 12px 76px 12px 14px;
     font-size: 12px;
   }
 
