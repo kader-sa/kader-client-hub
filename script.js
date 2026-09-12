@@ -1,14 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const trackedLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="tiktok.com"]');
+  const sendEvent = (name, params = {}) => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", name, params);
+    }
+  };
 
-  trackedLinks.forEach((link) => {
+  document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
     link.addEventListener("click", () => {
-      const destination = link.href.includes("wa.me") ? "whatsapp" : "tiktok";
-      document.dispatchEvent(
-        new CustomEvent("kader:outbound-click", {
-          detail: { destination, url: link.href }
-        })
-      );
+      sendEvent("whatsapp_click", {
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
+    });
+  });
+
+  document.querySelectorAll('a[href*="tiktok.com"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      sendEvent("tiktok_click", {
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
+    });
+  });
+
+  document.querySelectorAll(".btn, .secondary-btn, .small-btn").forEach((link) => {
+    link.addEventListener("click", () => {
+      sendEvent("cta_click", {
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
     });
   });
 });
