@@ -2,6 +2,10 @@
 
 Official client hub for Kader services, portfolio, WhatsApp contact, and smart menu offers.
 
+## Live website
+
+https://kader-ads.netlify.app/
+
 ## About Kader
 
 Kader is a creative advertising service focused on helping restaurants, cafés, sweets shops, schools, and small businesses present their products and services with clearer commercial value.
@@ -32,7 +36,15 @@ Includes:
 - Contact and WhatsApp button
 - Easy price update system
 
-### 3. School Content
+### 3. Kader Smart Page
+A simple mobile-friendly business page that can include:
+- Business introduction
+- Services
+- WhatsApp
+- Location
+- Social links
+
+### 4. School Content
 Professional content for schools and educational activities.
 
 Includes:
@@ -42,6 +54,19 @@ Includes:
 - Presentations
 - Short videos
 
+## SEO / GEO readiness
+
+The site includes:
+- Search-focused title and meta description
+- Canonical URL
+- Open Graph and Twitter metadata
+- Organization, WebSite, Service, and FAQ structured data
+- FAQ content
+- robots.txt
+- sitemap.xml
+
+GA4 and Google Search Console can be connected later when their account identifiers are available.
+
 ## Business Goal
 
 The goal of this hub is to make Kader easier to understand for clients and help them choose the right service quickly.
@@ -50,9 +75,5 @@ The goal of this hub is to make Kader easier to understand for clients and help 
 
 WhatsApp: 0595089166
 
-Website:
-https://kader-sa.netlify.app/
-
-## Status
-
-This project is currently under development.
+TikTok:
+https://www.tiktok.com/@kader.ads
