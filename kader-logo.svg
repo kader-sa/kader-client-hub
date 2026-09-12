@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Kader Ads</title>
+  <desc id="desc">شعار كادر</desc>
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <text x="256" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="118" font-weight="700" fill="#ffffff">KADER</text>
+  <text x="256" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#ffffff">كادر</text>
+</svg>
