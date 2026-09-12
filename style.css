@@ -391,3 +391,25 @@ footer p {
     font-size: 14px;
   }
 }
+
+
+.service-links {
+  padding-top: 52px;
+}
+
+.service-link-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-link-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.1);
+}
+
+.compact-hero {
+  padding-top: 72px;
+  padding-bottom: 62px;
+}
